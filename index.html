@@ -21,14 +21,31 @@
 			<p class="promotion__text"><span class="promotion--bold">Try it free 7 days</span> then $20/mo. thereadfter</p>
 		</div>
 
-		<form action="#" class="mainForm">
-			<input type="text" class="mainForm__name mainForm--format" placeholder="Name">
-			<input type="text" class="mainForm__lastName mainForm--format" placeholder="Last Name">
-			<input type="email" class="mainForm__Email mainForm--format" placeholder="Email Address">
-			<input type="password" class="mainForm__password mainForm--format" placeholder="Password">
+		<div class="mainForm">
+			<div action="#" class="mainForm__wrapper">
+				<input type="text" class="mainForm__name mainForm--format" placeholder="Name">  
+				<img src="./images/icon-error.svg" class="icon__error hidden" alt="icon-error">
+				<p class="errorMessage hidden">First Name cannot be empty</p>
+			</div>
+			
+			<form action="#" class="mainForm__wrapper">
+				<input type="text" class="mainForm__lastName mainForm--format" placeholder="Last Name">  
+				<img src="./images/icon-error.svg" class="icon__error hidden" alt="icon-error">
+				<p class="errorMessage hidden">Last Name cannot be empty</p>
+			</form>
+			<form action="#" class="mainForm__wrapper">
+				<input type="email" class="mainForm__Email mainForm--format" placeholder="Email Address">  
+				<img src="./images/icon-error.svg" class="icon__error hidden" alt="icon-error">
+				<p class="errorMessage hidden">looks like this is not an email</p>
+			</form>
+			<form action="#" class="mainForm__wrapper">
+				<input type="password" class="mainForm__password mainForm--format" placeholder="Password">  
+				<img src="./images/icon-error.svg" class="icon__error hidden" alt="icon-error">
+				<p class="errorMessage hidden">password cannot be empty</p>
+			</form>
 			<button type="submit" class="submit__button">Claim your free trial</button>
 			<p class="mainForm__termsAndServices">By clicking the button you are agreing to our <a href="#" class="termsAndServices--red">Terms and Services</a></p>
-		</form>
+		</div>
 
 	</div>
 	
