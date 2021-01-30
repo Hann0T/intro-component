@@ -1,0 +1,126 @@
+:root {
+	/* primary */	
+	--Red: hsl(0, 100%, 74%);
+	--Green: hsl(154, 59%, 51%);
+
+	/* Accent */
+	--Blue: hsl(248, 32%, 49%);
+
+	/* Neutral */
+	--Dark-Blue: hsl(249, 10%, 26%);
+	--Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	background-image: url(../images/bg-intro-desktop.png);
+	background-color: var(--Red);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.introComponent__wrapper {
+	height: 100%;
+	width: 1200px;
+	
+	display: grid;
+	grid-template: 100px 1fr / 1fr 1fr;
+	grid-template-areas: "header promotion"
+											 "header form";
+	box-sizing: border-box;	
+	padding: 100px;
+}
+
+.introComponent__header {
+	grid-area: header;
+	color: #fff;
+	align-self: center;
+	box-sizing: border-box;
+	padding-right: 50px;
+}
+
+.introComponent__title {
+	margin: 0;
+	font-size: 40px;
+}
+
+.introComponent__text {
+	font-weight: 400;
+}
+
+
+.promotion {
+	grid-area: promotion;
+	background-color: var(--Blue);
+	color: #fff;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.promotion__text {
+	margin: 0;
+	font-weight: 400;
+	color: var(--Grayish-Blue);
+}
+.promotion--bold {
+	font-weight: 600;
+	color: #fff;
+}
+
+.mainForm {
+	grid-area: form;
+	background-color: #fff;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 30px;
+	height: 500px;
+	box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mainForm--format {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px 20px;
+	border-radius: 5px;
+	border: 1px solid #ddd; 
+	margin-bottom: 30px;
+}
+
+.submit__button {
+	width: 100%;
+	background-color: var(--Green);
+	border: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	box-sizing: border-box;
+	padding: 20px 0;
+	border-radius: 10px;
+	box-shadow: 0 5px hsl(154deg 59% 42%);
+}
+.submit__button:hover {
+	transform: translateY(5px);
+	box-shadow: none;
+	transition: 0.5 all;
+}
+
+.mainForm__termsAndServices {
+	font-size: 12px;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.5);
+	margin-top: 20px;
+}
+.termsAndServices--red {
+	color: var(--Red);
+	text-decoration: none;
+	font-weight: 600;
+}
+
